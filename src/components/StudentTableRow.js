@@ -9,9 +9,9 @@ export default class StudentTableRow extends Component {
         super(props);
         this.deleteStudent = this.deleteStudent.bind(this);
     }
-
+//https://backendsms.azurewebsites.net
     deleteStudent() {
-        axios.delete('http://localhost:4000/students/delete-student/' + this.props.obj._id)
+        axios.delete('https://backendsms.azurewebsites.net/students/delete-student/' + this.props.obj._id)
             .then((res) => {
                 console.log('Student successfully deleted!');
             }).catch((error) => {
