@@ -12,7 +12,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CreateStudent from "./components/create-student.component";
 import EditStudent from "./components/edit-student.component";
 import StudentList from "./components/student-list.component";
-import CreateCourse from "./components/create-course.component";
 
 function App() {
   return (<Router>
@@ -43,6 +42,12 @@ function App() {
               <Nav>
                 <Link to={"/student-list"} className="nav-link">
                   View All
+                </Link>
+              </Nav>
+
+              <Nav>
+                <Link to={"/create-course"} className="nav-link">
+                  Create course
                 </Link>
               </Nav>
             </Nav>
