@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CreateStudent from "./components/create-student.component";
 import EditStudent from "./components/edit-student.component";
 import StudentList from "./components/student-list.component";
+import CreateCourse from "./components/create-course.component";
 
 function App() {
   return (<Router>
@@ -59,6 +60,8 @@ function App() {
                 <Route path="/create-student" component={CreateStudent} />
                 <Route path="/edit-student/:id" component={EditStudent} />
                 <Route path="/student-list" component={StudentList} />
+
+                <Route path="/create-course" component={CreateCourse} />
               </Switch>
             </div>
           </Col>
