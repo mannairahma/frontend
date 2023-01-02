@@ -30,7 +30,12 @@ function App() {
             <Nav className="justify-content-end">
               <Nav>
                 <Link to={"/create-student"} className="nav-link">
-                  Create
+                  Create Student
+                </Link>
+              </Nav>
+              <Nav>
+                <Link to={"/create-course"} className="nav-link">
+                  Create Course
                 </Link>
               </Nav>
 
@@ -43,12 +48,6 @@ function App() {
               <Nav>
                 <Link to={"/student-list"} className="nav-link">
                   View All
-                </Link>
-              </Nav>
-
-              <Nav>
-                <Link to={"/create-course"} className="nav-link">
-                  Create course
                 </Link>
               </Nav>
             </Nav>
